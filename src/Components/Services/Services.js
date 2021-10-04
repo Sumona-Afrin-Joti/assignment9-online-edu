@@ -26,7 +26,7 @@ const Services = () => {
 
                 <Row>
                     {
-                        pathName === '/home' ? services.slice(1, 5).map(service => <Service service={service} pathName={pathName}></Service>) : services.map(service => <Service service={service} pathName={pathName}></Service>)
+                       pathName==="/" || pathName==='/home' ? services.slice(1, 5).map(service => <Service service={service} pathName={pathName}></Service>) : services.map(service => <Service service={service} pathName={pathName}></Service>)
                     }
 
                 </Row>

@@ -5,14 +5,13 @@ import './Service.css'
 const Service = (props) => {
     const { service, pathName } = props;
     const { img, title, description, teacher, teacher_name, proffesion, course_price } = service;
-    console.log(props);
     return (
 
         <>
 
             {
 
-                pathName === "/" || pathName === "/home" ? (
+                pathName==="/" || pathName ==="/home" ? (
 
                     <Col lg={5} className="bg-white p-5 m-3 service">
                         <Stack gap={3}>
@@ -40,16 +39,16 @@ const Service = (props) => {
                 ) : (
 
 
-                    <Col lg={4} className="mt-5 service">
+                    <Col lg={4} className="mt-5 service p-3">
                         <Stack gap={3}>
-                            <div className=" ">
+                            <div>
                                 <img className="w-100" src={img} alt="" />
                             </div>
                             <div className="">
                                 <h5>{title}</h5>
                                 <p>{description}</p>
                             </div>
-                            <Stack direction="horizontal">
+                            <Stack direction="horizontal" className="">
                                 <div>
                                     <img className="rounded-circle" src={teacher} alt="" />
                                 </div>
