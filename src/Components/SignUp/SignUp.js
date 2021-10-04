@@ -12,7 +12,7 @@ const SignUp = () => {
         <>
             <Header></Header>
             <div className="sign-up">
-                <div className="input-div w-50">
+                <div className="input-div w-75">
                     <input placeholder="sign up with Google" className="w-100 input bg-light border-0 " type="text" />
                     <button className="btn btn-warning"><FontAwesomeIcon icon={faGooglePlus}></FontAwesomeIcon></button>
                 </div>
