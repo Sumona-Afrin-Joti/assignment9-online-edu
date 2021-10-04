@@ -12,13 +12,10 @@ function App() {
   return (
     <div className="bg-light w-100">
       <BrowserRouter>
-        <Header></Header>
-
         <Switch >
           <Route exact path="/">
             <Home></Home>
           </Route>
-
 
           <Route path="/home">
             <Home></Home>
@@ -39,7 +36,6 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
-        <Footer></Footer>
       </BrowserRouter>
     </div>
   );

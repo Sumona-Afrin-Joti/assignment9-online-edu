@@ -1,18 +1,25 @@
 import React from 'react';
 import AchieveGoal from '../AchieveGoal/AchieveGoal';
 import Footer from '../Footer/Footer';
-import Services from '../Services/Services';
+import Header from '../Header/Header';
+import Service from '../Service/Service';
 const Home = () => {
     return (
-        
-        <div className="mt-5">
-            <AchieveGoal></AchieveGoal>
-
+        <>
+        <Header></Header>
             <div className="mt-5">
-                <Services></Services>
+                <AchieveGoal></AchieveGoal>
+
+                <div className="mt-5">
+                    <Service></Service>
+                </div>
+
             </div>
-            
-        </div>
+
+            <Footer></Footer>
+        </>
+
+
     );
 };
 
