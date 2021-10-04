@@ -32,6 +32,7 @@ function App() {
           <Route path="/signUp">
             <SignUp></SignUp>
           </Route>
+          
           <Route path="*">
             <NotFound></NotFound>
           </Route>

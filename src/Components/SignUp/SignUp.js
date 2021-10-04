@@ -1,6 +1,6 @@
 import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import './SignUp.css';
