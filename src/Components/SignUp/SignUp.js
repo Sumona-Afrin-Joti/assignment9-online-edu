@@ -1,12 +1,13 @@
 import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Button from '@restart/ui/esm/Button';
+import Button from 'react-bootstrap/Button'
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import './SignUp.css';
 
 const SignUp = () => {
     return (
+        
         <div className="sign-up">
             <div className="input-div w-50">
                 <input placeholder="sign up with Google" className="w-100 input bg-light border-0 " type="text" />
