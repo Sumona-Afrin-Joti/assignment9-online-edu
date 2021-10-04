@@ -1,0 +1,16 @@
+.header{
+    height: 100px;
+    position: relative;
+}
+.header::after{
+    content: "";
+    background-image: url("../../images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

@@ -1,0 +1,11 @@
+.about-section-image{
+    position: relative;
+}
+.address{
+    position: absolute;
+    left: 5%;
+    top: 70%;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px rgb(53, 52, 52);
+}

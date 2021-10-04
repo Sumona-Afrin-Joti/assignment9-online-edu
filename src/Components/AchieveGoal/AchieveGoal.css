@@ -1,0 +1,48 @@
+.thumb-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.about-thumb-wrapper{
+    position: relative;
+}
+.about-review{
+        position: absolute;
+        left: 0px;
+        top: 70px;
+        transform: rotate(90deg);
+        letter-spacing: 1px;     
+}
+.about-review h5{
+    font-size: 12px;
+}
+.about-thumb{
+    margin-left: 100px;
+    
+}
+.about-thumb img{
+    width: 300px;
+}
+
+.about-banner{
+    margin-top: -170px;
+}
+.about-banner img{
+    width: 200px;
+}
+.about-student{
+    margin-top: -85px;
+    margin-left: 210px;
+    padding: 10px ;
+}
+.about-student img{
+    border-radius: 50%;
+}
+.about-student img+img{
+    margin-left: -8px;
+}
+.about-student p{
+    font-size: 12px;
+}
+li{
+    font-weight: 500;
+}
