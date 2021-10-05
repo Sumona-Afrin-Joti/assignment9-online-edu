@@ -1,9 +1,9 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 import useServices from '../../Hooks/useServices';
-import AllService from '../AllService/AllService';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import Service from '../Service/Service';
 
 const Services = () => {
     const [services] = useServices();
@@ -16,17 +16,17 @@ const Services = () => {
             <Header></Header>
             <div className="bg-light">
                 <div className="text-center">
-                    <h1>Our Services</h1>
+                    <h2>Our Services</h2>
                 </div>
 
                 <div className="container my-5">
-                    <h1>Online Courses<br />
-                        For Anyone, Anywhere</h1>
+                    <h3>Online Courses<br />
+                        For Anyone, Anywhere</h3>
                     <p>You don't have to struggle alone, you've got our assistance and help.</p>
 
                     <Row>
                         {
-                            services.map(service => <AllService service={service} key={service.course_id}></AllService>)
+                            services.map(service => <Service service={service} key={service.course_id}></Service>)
                         }
                     </Row>
                 </div>

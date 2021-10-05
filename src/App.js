@@ -2,10 +2,10 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Components/Home/Home';
-import Services from './Components/Services/Services';
 import About from './Components/About/About';
 import SignUp from './Components/SignUp/SignUp';
 import NotFound from './Components/NotFound/NotFound'
+import AllServices from './Components/AllServices/AllServices';
 function App() {
   return (
     <div className="bg-light w-100">
@@ -20,7 +20,7 @@ function App() {
           </Route>
 
           <Route path="/services">
-            <Services></Services>
+            <AllServices></AllServices>
           </Route>
 
           <Route path="/about">

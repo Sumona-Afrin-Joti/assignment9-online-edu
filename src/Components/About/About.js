@@ -11,7 +11,7 @@ const About = () => {
 
         <>
             <Header></Header>
-            <div className="container">
+            <div className="container mt-5">
                 <Row>
 
                     <Col lg={9} sm={12}>
@@ -22,10 +22,6 @@ const About = () => {
                         </Stack>
                         <Button variant="warning" >CONTACT US</Button>
                     </Col>
-                    <Col lg={3}>
-
-                    </Col>
-
 
                 </Row>
                 <Row>

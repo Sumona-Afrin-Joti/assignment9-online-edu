@@ -23,7 +23,7 @@ const AchieveGoal = () => {
                         <img src={bannerImage} alt=""></img>
                     </div>
                     <div className="about-student">
-                        <a href="#">
+                        <a href="stu">
                             <img src={student1} alt="" />
                             <img src={student2} alt="" />
                             <img src={student3} alt="" />
@@ -37,8 +37,8 @@ const AchieveGoal = () => {
 
                 <Col lg={6} className="mt-3">
 
-                    <h1>Achieve Your<br/>
-                        Goals With Educal</h1>
+                    <h2 className="mb-3">Achieve Your<br/>
+                        Goals With Educal</h2>
                         <p>Lost the plot bobby such a fibber bleeding bits and bobs<br/> don't get shirty with me bugger all mate chinwag super<br/> pukka william barney, horse play buggered.</p>
 
                         <ol>

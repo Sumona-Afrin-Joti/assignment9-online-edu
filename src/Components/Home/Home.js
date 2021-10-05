@@ -2,7 +2,7 @@ import React from 'react';
 import AchieveGoal from '../AchieveGoal/AchieveGoal';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import Service from '../Service/Service';
+import HomePageServices from '../HomePageServices/HomePageServices';
 const Home = () => {
     return (
         <>
@@ -11,7 +11,7 @@ const Home = () => {
                 <AchieveGoal></AchieveGoal>
 
                 <div className="mt-5">
-                    <Service></Service>
+                    <HomePageServices></HomePageServices>
                 </div>
 
             </div>
