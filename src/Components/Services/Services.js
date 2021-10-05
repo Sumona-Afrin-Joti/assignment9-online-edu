@@ -26,7 +26,7 @@ const Services = () => {
 
                     <Row>
                         {
-                            services.map(service => <AllService service={service}></AllService>)
+                            services.map(service => <AllService service={service} key={service.course_id}></AllService>)
                         }
                     </Row>
                 </div>

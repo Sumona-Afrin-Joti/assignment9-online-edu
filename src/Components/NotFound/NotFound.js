@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import img from '../../images/404.jpg';
-import Button from 'react-bootstrap/Button';
+import './NotFound.css'
 const NotFound = () => {
     return (
         <div>
             <div className="w-50 mx-auto pt-5">
                 <img className="w-100" src={img} alt="" />
             </div>
-            <div className="text-center my-3">
-            <Link to="/home"> <Button className=" btn btn-primary form-label" type="submit">
+            <div className="text-center my-5">
+            <Link to="/home"> <button className="notFound-button" type="submit">
                 Back to Home
-            </Button></Link>
+            </button></Link>
             </div>
            
         </div>

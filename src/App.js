@@ -3,8 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Components/Home/Home';
 import Services from './Components/Services/Services';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
 import SignUp from './Components/SignUp/SignUp';
 import NotFound from './Components/NotFound/NotFound'

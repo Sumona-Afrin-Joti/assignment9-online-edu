@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Container, Nav, Navbar} from 'react-bootstrap';
 import './Header.css';
 import logo from '../../images/logo.png'
 import { NavLink } from 'react-router-dom';
@@ -12,36 +12,24 @@ const Header = (props) => {
         fontSize: '16px',
         fontWeight: '500'
     }
+   
 
     return (
-        <div className="container header pt-3">
-            <Row>
-                <Col md={3}>
-                    <img src={logo} alt="" />
-                </Col>
-
-                <Col md={9} className="d-md-flex justify-content-end d-none">
-                    <NavLink activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
-                    }} style={navLinkStyle} to="/home">Home</NavLink>
-                    <NavLink activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
-                    }} style={navLinkStyle} to="/about">About</NavLink>
-                    <NavLink activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
-                    }} style={navLinkStyle} to="/services">Services</NavLink>
-                    <NavLink activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
-                    }} style={navLinkStyle} to="/signUp">Sign Up</NavLink>
-                </Col>
-
-            </Row>
-            
-        </div>
+        <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="#home"><img src={logo} alt="" /></Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <NavLink style={navLinkStyle} activeStyle={{color: "red",fontWeight: "bold"}} to="/home">Home</NavLink>
+              <NavLink style={navLinkStyle} activeStyle={{color: "red",fontWeight: "bold"}} to="/about">About</NavLink>
+              <NavLink style={navLinkStyle} activeStyle={{color: "red",fontWeight: "bold"}} to="/services">Services</NavLink>
+              <NavLink style={navLinkStyle} activeStyle={{color: "red",fontWeight: "bold"}} to="/signUp">Sign up</NavLink>
+             
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     );
 };
 
